@@ -1,0 +1,37 @@
+<div class="jumbotron" ng-show="!loading">
+  <div class="media">
+  <div class="media-left media-middle">
+    <img class="media-object" src="{{movie.images.large}}" alt="{{movie.title}}">
+  </div>
+  <div class="media-body">
+   	<p><h2>{{movie.title}}</h2></p>
+    <p>{{movie.countries.join("、")}} / {{movie.year}} / {{movie.genres.join("、")}}</p>
+    <p>评分：{{movie.rating.average}}</p>
+    <p>导演：<span ng-repeat="director in movie.directors">{{director.name}}{{$last?"":"、"}}</span></p>
+    <p>主演：<span ng-repeat="cast in movie.casts">{{cast.name}}{{$last?"":"、"}}</span></p>
+    <p>{{movie.summary}}</p>
+  </div>
+</div>
+</div>
+<div class="mask" ng-if="loading">
+	<div class="spinner">
+	  <div class="spinner-container container1">
+	    <div class="circle1"></div>
+	    <div class="circle2"></div>
+	    <div class="circle3"></div>
+	    <div class="circle4"></div>
+	  </div>
+	  <div class="spinner-container container2">
+	    <div class="circle1"></div>
+	    <div class="circle2"></div>
+	    <div class="circle3"></div>
+	    <div class="circle4"></div>
+	  </div>
+	  <div class="spinner-container container3">
+	    <div class="circle1"></div>
+	    <div class="circle2"></div>
+	    <div class="circle3"></div>
+	    <div class="circle4"></div>
+	  </div>
+	</div>
+</div>
