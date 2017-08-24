@@ -1,0 +1,75 @@
+.login{
+	background-image: url(../image/background.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0; 
+	form{
+		.mt(260);
+		.validation-invalid{
+			position: absolute;
+			right: 0;
+			top: -12px;
+			color: red;
+			font-size: 12px;
+		}
+		.form-line{
+			margin-left: auto;
+			margin-right: auto;
+			.w(300);
+			.h(40);
+			.lh(40);
+			.fs(0);
+			background-color: @formBgColor;
+			color: @defaultColor;
+			i{
+				background-repeat: no-repeat;
+				background-color: @iconBgColor;
+				background-position: 12px 4px;
+				.w(55);
+				height: 100%;
+			}
+			.account{
+				background-image: url(../image/account.png);
+			}
+			.lock{
+				background-image: url(../image/lock.png);
+			}
+			input{
+				height: 100%;
+				vertical-align: top;
+				.w(215);
+				.pl(30);
+				background-color: transparent;
+				color: @defaultColor;
+				border-width: 0;
+				outline-width: 0;
+				&::-webkit-input-placeholder{
+					color: @defaultColor;
+				}
+			}
+			&:first-child{
+				border-bottom: 1px solid @defaultColor;
+			}
+		}
+		button{
+			.w(300);
+			.h(35);
+			font-size: 18px;
+			outline-width: 0;
+			&.login-btn{
+				margin-top: 75px;
+				background-color: @headBgColor;
+				color: @defaultColor;
+			}
+			&.register-btn{
+				margin-top: 20px;
+				background-color: @btnBgColor;
+				color: @headBgColor;
+			}
+		}
+	}
+}

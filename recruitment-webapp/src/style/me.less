@@ -1,0 +1,36 @@
+.me{
+	img{
+		.mt(60);
+	}
+	.name{
+		.mt(25);
+	}
+	.btns{
+		.mt(40);
+		button{
+			background-color: @headBgColor;
+			color: @defaultColor;
+			.fs(16);
+			.w(150);
+			.h(95);
+			margin-left: 12px;
+			margin-right: 12px;
+			&.logout{
+				.w(330);
+				.h(40);
+				.mt(20);
+				.ml(20);
+				background-color: red;
+			}
+		}
+	}
+	.login-btn{
+		outline-width: 0;
+		border-width: 0;
+		.w(330);
+		.h(40);
+		.mt(200);
+		background-color: @headBgColor;
+		color: @defaultColor;
+	}
+}

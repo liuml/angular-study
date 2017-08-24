@@ -1,0 +1,24 @@
+{
+  "name": "angular-lagou",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "liuml <605880092@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-ui-router": "ui-router#^1.0.3+hybrid-2.0.0-2",
+    "angular-validation": "^1.4.4",
+    "angular-cookies": "1.5.8",
+    "angular-animate": "1.5.8"
+  }
+}
